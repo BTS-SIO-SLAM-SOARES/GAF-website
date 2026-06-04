@@ -59,7 +59,7 @@
     "@type": "Organization",
     "name": "GameAssetFactory",
     "url": "https://gameassetfactory.com",
-    "logo": "https://gameassetfactory.com/img/GameAssetFactoryLogo1024.webp",
+    "logo": "https://gameassetfactory.com/img/GameAssetFactoryLogopetit.png",
     "description": "From stylized to realistic environments, Game Asset Factory provides solutions for every situation, using Hard-surface, organic modeling or Photogrammetry.",
     "sameAs": [
       "https://discord.gg/tsywd9BwCn",
