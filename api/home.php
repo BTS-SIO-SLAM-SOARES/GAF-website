@@ -14,6 +14,7 @@
  
             </div>
             <div class="home__data">
+              <h1 class="sr-only">Game Asset Factory - 3D Assets, Environments & Custom Work for Games</h1>
               <div class="home__logo">
                 <img src="../img/GameAssetFactoryLogo1024.webp" alt="Game Asset Factory" class="home__logo-img" width="512" height="512">
               </div>
