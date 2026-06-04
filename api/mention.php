@@ -1,7 +1,4 @@
-<!doctype html>
-<html lang="en">
 
-<body>
   <main class="main">
     <!--========================= Accueil =====================-->
     <section class="mention" id="Mention">
@@ -64,5 +61,4 @@
         </div>
     </section>
 
-  </main>
-</body>
+  </main>

@@ -7,11 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <meta property="og:site_name" content="GameAssetFactory 3D Creation">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="GameAssetFactory">
   <meta property="og:description" content="Build worlds, piece by piece">
   <meta property="og:url" content="https://gameassetfactory.com/">
-  <meta property="og:image" content="https://gameassetfactory-website-gaf.vercel.app/img/GameAssetFactoryLogo1024.webp">
-  <link rel="icon" href="https://gameassetfactory-website-gaf.vercel.app/img/GameAssetFactoryLogopetit.ico">
+  <meta property="og:image" content="https://gameassetfactory.com/img/GameAssetFactoryLogo1024.webp">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <link rel="icon" type="image/x-icon" href="https://gameassetfactory.com/img/GameAssetFactoryLogopetit.ico">
+  <link rel="icon" type="image/png" sizes="64x64" href="https://gameassetfactory.com/img/GameAssetFactoryLogopetit.png">
+  <link rel="apple-touch-icon" href="https://gameassetfactory.com/img/GameAssetFactoryLogopetit.png">
   <?php
   $current_page = isset($_GET['page']) ? $_GET['page'] : 'home';
   $meta_title = 'GameAssetFactory - Build worlds, piece by piece';
@@ -44,9 +49,31 @@
   }
   ?>
   <meta name="description" content="<?php echo htmlspecialchars($meta_description, ENT_QUOTES); ?>" />
-  <link rel="canonical" href="<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>" />
+  <link rel="canonical" href="https://gameassetfactory.com<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>" />
   <meta name="robots" content="index,follow" />
   <title><?php echo htmlspecialchars($meta_title, ENT_QUOTES); ?></title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "GameAssetFactory",
+    "url": "https://gameassetfactory.com",
+    "logo": "https://gameassetfactory.com/img/GameAssetFactoryLogopetit.png",
+    "description": "From stylized to realistic environments, Game Asset Factory provides solutions for every situation, using Hard-surface, organic modeling or Photogrammetry.",
+    "sameAs": [
+      "https://discord.gg/tsywd9BwCn",
+      "https://www.youtube.com/@Unreal3D",
+      "https://github.com/GameAssetFactory/GAF-website",
+      "https://www.fab.com/sellers/GameAssetFactory"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contact@gameassetfactory.com",
+      "contactType": "customer service"
+    }
+  }
+  </script>
 
   <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../css/newcss.css" />
@@ -55,7 +82,7 @@
     href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
 </head>
 
-
+<body>
 
 <header class="header" id="header">
   <nav class="nav container">
@@ -106,9 +133,6 @@
     </div>
   </nav>
 </header>
-
-
-<body>
   <div id="loader-wrapper">
     <img src="../img/GameAssetFactoryLogo1024.webp" id="loader-logo" alt="Logo" width="128" height="128">
   </div>
