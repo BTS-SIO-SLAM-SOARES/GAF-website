@@ -1114,6 +1114,11 @@ transform: scale(1.1);
   padding-left: 1.75rem;
 }
 
+.jobs__input option {
+  background-color: var(--container-color);
+  color: var(--text-color);
+}
+
 .jobs__input-wrapper {
   position: relative;
   display: flex;
