@@ -196,11 +196,24 @@
                 <label for="subject" class="jobs__label">Position</label>
                 <div class="jobs__input-wrapper">
                   <i class="uil uil-briefcase-alt jobs__input-icon"></i>
-                  <select class="jobs__input" id="subject" required>
+                  <!-- Select caché pour la soumission du formulaire -->
+                  <select class="jobs__input" id="subject" required style="display:none;">
                     <option value="">Select a position</option>
                     <option value="3D Environment Artist">3D Environment Artist</option>
                     <option value="3D Artist">3D Artist</option>
                   </select>
+                  <!-- Dropdown custom -->
+                  <div class="custom-select" id="customSelect">
+                    <div class="custom-select__trigger">
+                      <span class="custom-select__value">Select a position</span>
+                      <i class="uil uil-angle-down custom-select__arrow"></i>
+                    </div>
+                    <div class="custom-select__options">
+                      <div class="custom-select__option" data-value="">Select a position</div>
+                      <div class="custom-select__option" data-value="3D Environment Artist">3D Environment Artist</div>
+                      <div class="custom-select__option" data-value="3D Artist">3D Artist</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -218,6 +231,53 @@
               <i class="uil uil-message button__icon"></i>
             </a>
           </form>
+
+          <script>
+            // Custom Select Dropdown
+            const customSelect = document.getElementById('customSelect');
+            const selectTrigger = customSelect.querySelector('.custom-select__trigger');
+            const selectValue = customSelect.querySelector('.custom-select__value');
+            const selectOptions = customSelect.querySelectorAll('.custom-select__option');
+            const hiddenSelect = document.getElementById('subject');
+
+            // Ouvrir/Fermer le dropdown
+            selectTrigger.addEventListener('click', (e) => {
+              e.stopPropagation();
+              customSelect.classList.toggle('open');
+            });
+
+            // Sélectionner une option
+            selectOptions.forEach(option => {
+              option.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const value = option.dataset.value;
+                const text = option.textContent;
+
+                // Mettre à jour l'affichage
+                selectValue.textContent = text;
+                
+                // Mettre à jour le select caché
+                hiddenSelect.value = value;
+
+                // Marquer l'option sélectionnée
+                selectOptions.forEach(opt => opt.classList.remove('selected'));
+                option.classList.add('selected');
+
+                // Fermer le dropdown
+                customSelect.classList.remove('open');
+              });
+            });
+
+            // Fermer au clic extérieur
+            document.addEventListener('click', () => {
+              customSelect.classList.remove('open');
+            });
+
+            // Empêcher la fermeture au clic dans le dropdown
+            customSelect.addEventListener('click', (e) => {
+              e.stopPropagation();
+            });
+          </script>
 
           <script>
             document.getElementById('sendEmail').addEventListener('click', function(event) {
