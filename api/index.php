@@ -11,9 +11,7 @@
   <meta property="og:title" content="GameAssetFactory">
   <meta property="og:description" content="Build worlds, piece by piece">
   <meta property="og:url" content="https://gameassetfactory.com/">
-  <meta property="og:image" content="https://gameassetfactory.com/img/GameAssetFactoryLogo1024.webp">
-  <meta property="og:image:width" content="1024">
-  <meta property="og:image:height" content="1024">
+  <meta property="og:image" content="https://gameassetfactory.com/img/GameAssetFactoryLogopetit.png">
   <link rel="icon" type="image/x-icon" href="https://gameassetfactory.com/img/GameAssetFactoryLogopetit.ico">
   <link rel="icon" type="image/png" sizes="64x64" href="https://gameassetfactory.com/img/GameAssetFactoryLogopetit.png">
   <link rel="apple-touch-icon" href="https://gameassetfactory.com/img/GameAssetFactoryLogopetit.png">
