@@ -94,7 +94,6 @@
               Send mail
               <i class="uil uil-message button__icon"></i>
             </a>
-          </button>
         </form>
  
         <script>
