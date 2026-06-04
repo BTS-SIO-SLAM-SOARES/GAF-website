@@ -308,11 +308,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }, true);
     }
 
-    // S'assurer que l'image se charge à chaque changement de slide
+    // S'assurer que l'image se charge à chaque changement de slide et précharger les adjacentes
     newSwiper.on('slideChange', function () {
         const currentIndex = newSwiper.activeIndex;
         setTimeout(() => {
+            // Charger l'image courante
             modalImages[currentIndex].src = modalImages[currentIndex].dataset.fullsize;
+            
+            // Précharger l'image suivante
+            if (currentIndex < modalImages.length - 1) {
+                modalImages[currentIndex + 1].src = modalImages[currentIndex + 1].dataset.fullsize;
+            }
+            // Précharger l'image précédente
+            if (currentIndex > 0) {
+                modalImages[currentIndex - 1].src = modalImages[currentIndex - 1].dataset.fullsize;
+            }
         }, 0);
     });
 
