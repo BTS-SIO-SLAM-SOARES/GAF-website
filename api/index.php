@@ -23,24 +23,24 @@
   $meta_description = 'Game Asset Factory: 3D assets, environments, materials, and custom work.';
   switch ($current_page) {
     case 'products':
-      $meta_title = 'Products - GameAssetFactory';
+      $meta_title = 'Products';
       $meta_description = 'Discover our ready-to-use 3D packs, custom solutions, and services.';
       break;
     case 'gallery':
-      $meta_title = 'Gallery - GameAssetFactory';
+      $meta_title = 'Gallery';
       $meta_description = 'Explore our gallery of 3D environments, props, and materials.';
       break;
     case 'jobs':
-      $meta_title = 'Jobs - GameAssetFactory';
+      $meta_title = 'Jobs';
       $meta_description = 'Join Game Asset Factory: remote freelance opportunities for 3D artists.';
       break;
     case 'contact':
-      $meta_title = 'Contact - GameAssetFactory';
+      $meta_title = 'Contact';
       $meta_description = 'Contact Game Asset Factory via Discord or email for inquiries.';
       break;
     case 'mention':
-      $meta_title = 'Legal Mentions - GameAssetFactory';
-      $meta_description = 'Legal mentions and terms for Game Asset Factory website.';
+      $meta_title = 'Legal Notices';
+      $meta_description = 'Legal notices and terms for Game Asset Factory website.';
       break;
   }
   $canonical = '/';
